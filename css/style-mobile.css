@@ -1,0 +1,273 @@
+@charset 'UTF-8';
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900|Bai+Jamjuree);
+
+@font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+
+body {
+    background: #000000;
+    /*min-width: 480px;*/
+    margin: 0;
+    width: 100%;
+}
+
+body,input,textarea,select {
+    font-size: 12pt;
+    line-height: 1.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    letter-spacing: -1px;
+}
+
+header {
+    margin-bottom: 1em;
+}
+
+    header p {
+        display: block;
+        margin: 1em 0 0 0;
+        padding: 0 0 0.5em 0;
+    }
+
+/* Box */
+
+    .box {
+        padding: 1em;
+    }
+
+        .box.style2 {
+            /*padding: 1.5em 1.25em 1.5em 1.25em;*/
+            padding: 3.5em 3.25em 3.5em 3.25em;
+            background-color: transparent;
+        }
+
+/* Main */
+
+    .main {
+    }
+
+        .main.style1 {
+            padding: 4em 15px 4em 15px;
+        }
+
+            .main.style1 h2 {
+                font-size: 3em;
+                letter-spacing: -3px;
+            }
+
+        .main.style2 {
+            padding: 6em 15px 6em 15px;
+        }
+        
+        .main.style2.button.down {
+            display: none;
+        }
+            .main.style2.button.anchored {
+                display: none;
+            }
+
+            .main.style2 .content {
+                width: 100%;
+                left: 0% !important;
+                text-align: center;
+            }
+            
+            .main.style2 .tmp {
+                width: 100%;
+                height: 10em;
+                background-size: cover;
+            }
+
+        .main.style3 {
+            text-align: center;
+            padding: 3em 10px 3em 10px;
+        }
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header {
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #FFFFFF;
+    height: 3em;
+    line-height: 3em;
+    box-shadow: 0 0 0.15em 0 rgba(0,0,0,0.1);
+}
+
+body {
+    padding-top: 3em;
+}
+
+#logo {
+    position: absolute;
+    left: 1em;
+    top: 0;
+    height: 3em;
+    line-height: 3em;
+    letter-spacing: -1px;
+}
+
+    #logo a {
+        font-size: 1.25em;
+    }
+
+/*******
+#nav {
+    position: absolute;
+    right: 0.2em;
+    top: 0;
+    height: 3em;
+    line-height: 3em;
+}
+
+    #nav ul {
+        margin: 0;
+    }
+
+        #nav ul li {
+            display: inline-block;
+            margin-left: 0.1em;
+            font-size: 0.5em;
+        }
+        
+            #nav ul li a {
+                display: block;
+                color: inherit;
+                text-decoration: none;
+                height: 1em;
+                line-height: 1em;
+                padding: 0 0.1em 0 0.1em;
+                outline: 0;
+            }
+*******/
+#nav {
+    display: none;
+}
+
+
+/*********************************************************************************/
+/* Intro                                                                         */
+/*********************************************************************************/
+
+#intro {
+    background: url('../images/magcom_bkg-11.png');
+    width:100%;
+    height:600px;
+    background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	
+}
+
+/*********************************************************************************/
+/* about us                                                                         */
+/*********************************************************************************/
+
+#aboutus {
+	background: url('../images/magcom_main-12.png');
+    width:100%;
+    height:600px;
+    background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+}
+
+/*********************************************************************************/
+/* ourproduct                                                                  	 */
+/*********************************************************************************/
+
+#ourproduct {
+	background: url('../images/magcom_main-13.png');
+    width:100%;
+    height:600px;
+    background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/*********************************************************************************/
+/* Two, ouraddress                                                               */
+/*********************************************************************************/
+
+#ouraddress {
+    background: url('../images/magcom_main-14.png');
+    width:100%;
+    height:600px;
+    background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+/*********************************************************************************/
+/* Work                                                                          */
+/*********************************************************************************/
+
+#work {
+    background: #A3C380;
+    width:100%;
+    height:100px;
+}
+
+    
+
+
+
+/*********************************************************************************/
+/* Contact                                                                       */
+/*********************************************************************************/
+
+#contact {
+    padding-bottom: 0;
+    background: #A3C380;
+    width:100%;
+    height:480px;
+    overflow: hidden;
+    background: #A3C380;
+}
+
+    #contact .box {
+        position: relative;
+        bottom: 0;
+        
+        -moz-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        
+        -moz-transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    
+    #contact.inactive {
+    }
+
+        #contact.inactive .box {
+            bottom: -30em;
+        }
+
+/***
+#nav {
+    display: none;
+}
+***/
+
+.whiteline {
+        height:10px; width:100%; background-color:#FFFFFF;
+    }
+
+
+
+
