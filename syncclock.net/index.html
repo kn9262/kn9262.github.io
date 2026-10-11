@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--notes: Magcom international ltd Developed v1.1 -->
+	<head>
+		<title>SyncClock</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="description" content="SyncClock" >
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css">
+			<link rel="stylesheet" href="css/style.css">
+		</noscript>
+	</head>
+
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+
+				<!-- Logo -->
+					<img style="width: 300px; height: 56px;" alt="Magcom" src="images/syncClock_webpage 3_7.png">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro">Home</a></li>
+							<li><a href="#one">Product concept</a></li>
+							<li><a href="#two">Product info</a></li>
+							<li><a href="#work">APP</a></li>
+							<li><a href="#contact">Buy now</a></li>
+							<li><a href="#QA">Q & A</a></li>
+							<li><a href="#contactus">Contact us</a></li>
+							<li><a href="https://youtu.be/1PdOHlVkdAY" class="fa solo fa-youtube" target="_blank"><span>Youtube</span></a></li>
+						</ul>
+					</nav>
+
+			</header>
+
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+			<header></header>
+				<div class="content container small">
+					<div>
+					<img style="width: 360px; height: 162px;" alt="syncclock" src="images/syncClock_webpage 3_11.png">
+					</div>
+				</div>
+				<a href="#one" class="button style2 down anchored">next</a>
+			</section>
+			<div class="whiteline"></div>
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2 magfont">
+					<b>Stay away from smartphone</b>
+					<br>
+					<b>Keep good sleeping quality</b>
+				</div>
+				<a href="#two" class="button style2 down anchored">next</a>
+			</section>
+			<div class="whiteline"></div>
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<!-- <p en> -->
+						<img style="width: 566px; height: 300px;" alt="syncclock" src="images/SC_10.png">
+					<!-- </p> -->
+				</div>
+				<a href="#work" class="button style2 down anchored">next</a>
+			</section>
+			<div class="whiteline"></div>
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content container">
+					<div style="height:442px"></div>
+
+					<!--
+						 Lightbox Gallery
+
+						 Powered by poptrox. Full docs here: https://github.com/n33/jquery.poptrox
+					-->
+					<!--
+						<div class="container small gallery">
+							<div class="row flush images">
+								<div class="6u"><a href="images/fulls/01.jpg" class="image full l"><img src="images/thumbs/01.jpg" title="Silver" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/02.jpg" class="image full r"><img src="images/thumbs/02.jpg" title="Black" alt="" /></a></div>
+							</div>
+						</div>
+					-->
+				</div>
+				<a href="#contact" class="button style2 down anchored">next</a>
+			</section>
+			<div class="whiteline"></div>
+		
+		<!-- Buy now -->
+			<section id="contact" class="main style3 secondary">
+				<div class="content container small">
+						<h2>BUY NOW
+							<br><br><br>
+						</h2>
+						<div class="text2left" style="line-height: 80%">
+							<h3>
+							The product is currently out of stock!<br> 
+							Online purchase is not available at this moment.  Sorry. 
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							</h3>
+						</div>
+<!-- paypal -->
+<!-- disble buy button 
+<div id="smart-button-container">
+      <div style="text-align: center;">
+		<div style="margin-bottom: 1.25rem;">
+		  <p>SyncClock</p>
+		  <select id="item-options"><option value="black/white" price="25">black/white - 25 USD</option><option value="black/white" price="25">black/white - 25 USD</option></select>
+          <select style="visibility: hidden" id="quantitySelect"><option value="1">1</option><option value="2">2</option></select>
+        </div>
+      <div id="paypal-button-container"></div>
+      </div>
+    </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=ATPlquDQjN2mrvSCw40dgPij6PF4YrufjnageNgfuBRx8kqD6nBz6iEVvtp5V_J5EeAx1TlX0KFu5eBL&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <script>
+      function initPayPalButton() {
+        var shipping = 0;
+        var itemOptions = document.querySelector("#smart-button-container #item-options");
+    var quantity = parseInt(10);
+    var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
+    if (!isNaN(quantity)) {
+      quantitySelect.style.visibility = "visible";
+    }
+    var orderDescription = 'SyncClock';
+    if(orderDescription === '') {
+      orderDescription = 'Item';
+    }
+    paypal.Buttons({
+      style: {
+        shape: 'rect',
+        color: 'gold',
+        layout: 'vertical',
+        label: 'buynow',
+        
+      },
+      createOrder: function(data, actions) {
+        var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
+        var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+        var tax = (0 === 0) ? 0 : (selectedItemPrice * (parseFloat(0)/100));
+        if(quantitySelect.options.length > 0) {
+          quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
+        } else {
+          quantity = 1;
+        }
+
+        tax *= quantity;
+        tax = Math.round(tax * 100) / 100;
+        var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
+        priceTotal = Math.round(priceTotal * 100) / 100;
+        var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
+
+        return actions.order.create({
+          purchase_units: [{
+            description: orderDescription,
+            amount: {
+              currency_code: 'USD',
+              value: priceTotal,
+              breakdown: {
+                item_total: {
+                  currency_code: 'USD',
+                  value: itemTotalValue,
+                },
+                shipping: {
+                  currency_code: 'USD',
+                  value: shipping,
+                },
+                tax_total: {
+                  currency_code: 'USD',
+                  value: tax,
+                }
+              }
+            },
+            items: [{
+              name: selectedItemDescription,
+              unit_amount: {
+                currency_code: 'USD',
+                value: selectedItemPrice,
+              },
+              quantity: quantity
+            }]
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+          alert('Transaction completed by ' + details.payer.name.given_name + '!');
+        });
+      },
+      onError: function(err) {
+        console.log(err);
+      },
+    }).render('#paypal-button-container');
+  }
+  initPayPalButton();
+    </script>
+-->
+<!-- end of paypal	-->
+					
+				</div>
+				<br>
+				<br>
+				<div style="height:100px"></div>
+				<a href="#QA" class="button style2 down anchored">next</a>
+			</section>
+			<div class="whiteline"></div>
+		<!-- QA -->
+			<section id="QA" class="main style3 secondary">
+					<div class="content container small magfont">
+						<b>Q & A<br><br></b>
+						<div class="text2left" style="line-height: 80%">
+						<font size="4em">
+						Does syncclock work for iOS and Android phones ?<br>
+						<font color="lightgrey">Yes, it is compatible to iOS and most android phones.  A few android phones have the noise cancellation that will prevent the clock data transmission. Please disable this function in your phone setting.<br><br></font>
+						How does it 'sync' to the clock ?<br>
+						<font color="lightgrey">Download our APP "SyncClock". Open the APP and put the clock on the phone's screen and then press the sync button on the clock. The synchronization will be started automatically.<br><br></font>
+						Does it need bluetooth / wifi for sync ?<br>
+						<font color="lightgrey">No bluetooth or wifi to be set.  SyncClock uses our own patented techonology for sync.  There is a sensor on the clock bottom and it can receive the data transmitted by the APP.<br><br></font>
+						When I turn on my android phone Night mode (eye protection), it causes the synchronisation failed, why ?<br>
+						<font color="lightgrey"> The night mode could cause synchronisation error.  Pls temporary turn it off for sync to run.<br><br></font>
+						Will the APP change my phone's internal alarm ?<br>
+						<font color="lightgrey">No, it won't.  The APP alarm is independent of the phone's alarm.  The APP alarm will set the clock only.<br><br></font>
+						Why there is only one button ? how can I set the clock and stop the alarm ?<br>
+						<font color="lightgrey">SyncClock is unlike transditional alarm clocks that always have a lot of keys and need complicated adjustment. User can set alarms and reminders on the APP and send to the clock easily.  When the alarm happens, user can stop the alarm by the button on the clock.<br><br></font> 
+						How to stop alarm repeating when snooze is on ?<br>
+						<font color="lightgrey">When alarm happens, press the clock's button will stop the alarm sound.  If snooze is on, repeative alarm sound will be triggered at every 5 mins and last for 30mins.  If you want to stop the snooze now, you can hold the button for 2 seconds until a short beep sound is heard and this will stop the repeat.<br><br></font> 
+						I pressed the SYNC button but no synchronisation start ?<br>
+						<font color="lightgrey">If you are using android, please check 1. night mode must be off.  2. screen off time must be 2 mins or longer.  3.  some phones have noise cancellation and it must be turn off.<br><br></font> 
+						<br><br><br></font>
+						<!--
+						The APP suddenly crashed.  The problem presists even after re-install, how to fix it ?<br>
+						<font color="lightgrey">It may be due to the phone's memory messed.<br>Please power off the phone and turn on again.  Mostly the problem can be gone.<br><br></font>
+						-->
+						</div>
+					</div>
+					<a href="#contactus" class="button style2 down anchored">next</a>
+			</section>
+			<div class="whiteline"></div>
+
+		<!-- Contact us -->
+
+		<section id="contactus" class="main style3 secondary">
+			<div class="content container magfont">
+				<header>
+						<!--<h2><font size="8em">Contact us</font></h2>-->
+						<h2><p style="font-size:0.5em">Contact us</p></h2>
+						<hr style="width: 80%; ">
+				</header>
+				<div class="box container small" style="width: 100%; height: 60%;">
+					<!--<font size="4em">email: sales@syncclock.net</font>-->
+					<p style="font-size:0.5em">
+						<img style="width:1em; height:1em; vertical-align: sub;" src="images/email.svg">
+						email: sales@magcom.com.hk
+					</p>
+					<br>
+					<br>
+					<br>
+					<br>
+				</div>
+			</div>
+		</section>
+		<div class="whiteline"></div>
+
+		<!-- Footer -->
+		<footer id="footer">
+
+		<!--
+				Social Icons
+
+				Use anything from here: http://fortawesome.github.io/Font-Awesome/cheatsheet/)
+		-->
+			<ul class="actions">
+
+
+				<!--<li><a href="" class="fa solo fa-twitter" target="_blank"><span>Twitter</span></a></li>-->
+				<li><a href="https://www.facebook.com/syncclock/" class="fa solo fa-facebook" target="_blank"><span>Facebook</span></a></li>
+				<!--<li><a href="" class="fa solo fa-google-plus" target="_blank"><span>Google+</span></a></li>-->
+				<!--<li><a href="" class="fa solo fa-dribbble" target="_blank"><span>Dribbble</span></a></li>-->
+				<!--<li><a href="" class="fa solo fa-pinterest" target="_blank"><span>Pinterest</span></a></li>-->
+				<!--<li><a href="" class="fa solo fa-instagram" target="_blank"><span>Instagram</span></a></li>-->
+				<li><a href="https://youtu.be/1PdOHlVkdAY" class="fa solo fa-youtube" target="_blank"><span>Youtube</span></a></li>
+			</ul>
+
+			<!-- Menu -->
+			<ul class="menu">
+				<!--<li>&copy; Magcom International Ltd - 2024</li>-->
+				<li>
+					&copy; Magcom International Ltd - 
+					<span id="copyright">
+						<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+					</span>
+				</li>
+				<li>e : sales@magcom.com.hk</li>
+				<li>All copyrighted</li>
+				<li>012</li>
+			</ul>
+		</footer>
+	</body>
+</html>
