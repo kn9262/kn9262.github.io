@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ThermoJack</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="ThermoJack is made by Magcom International Ltd" />
+		<meta name="keywords" content="ThermoJack, magcom, thermometer, humidity, sensor" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+				<script src="js/jquery.min.js"></script>
+				<script src="js/jquery.poptrox.min.js"></script>
+				<script src="js/skel.min.js"></script>
+				<script src="js/init.js"></script>
+		        <script src="//api.html5media.info/1.2.2/html5media.min.js"></script>
+		        <script src="validator/jquery.validator-0.3.6.min.js"></script>
+
+		<noscript>
+				<link rel="stylesheet" href="css/skel-noscript.css" />
+				<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51306229-1', 'thermojack.net');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+	function getParameterByName(name) {
+	    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+</script>
+
+</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+
+				<!-- Logo -->
+					<img style="width: 300px; height: 56px;"alt="thermojack" src="images/thermojack_main-03.jpg">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro">Home</a></li>
+							<li><a href="#one">Info</a></li>
+							<li><a href="#work">Product photos</a></li>
+							<li><a href="#buynow">Buy now</a></li>
+							<li><a href="#QA">Q&A</a></li>
+							<li><a href="#contact">Contact us</a></li>
+							<li><a href="https://youtu.be/BIm-N7jdiQE" class="fa solo fa-youtube" target="_blank"><span>Youtube</span></a></li>
+						</ul>
+					</nav>
+
+			</header>
+
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content container small">
+					<header>
+						<h2><br><br><br><br></h2>
+					</header>
+                    
+					<footer>
+						<a href="#one" class="button style2 down">more</a>
+					</footer>
+				</div>
+			</section>
+			<div class="whiteline"></div>
+
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+
+					<p en>
+                        <font size="5" color="grey">
+
+                        </font>
+                        <img style="width: 660px; height: 350px;"alt="web3" src="images/thermojack_main-04.png">
+                    </p>
+				</div>
+				<a href="#work" class="button style2 down anchored">next</a>
+			</section>
+			<div class="whiteline"></div>
+
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content container small magfont">
+					<b><font size="8em" color="white">Product photo</font></b>
+					<br>
+					<div class="container small gallery">
+                        <div class="row flush images">
+							<div class="6u"><a href="images/fulls/m336.jpg" class="image full l"><img src="images/thumbs/m336left.png" title="white" alt="" /></a></div>
+							<div class="6u"><a href="images/fulls/m336.jpg" class="image full r"><img src="images/thumbs/m336right.png" title="white" alt="" /></a></div>
+						</div>
+					</div>
+				</div>
+				<a href="#buynow" class="button style2 down anchored">next</a>
+			</section>
+			<div class="whiteline"></div>
+
+		<!-- buy now -->
+			<section id="buynow" class="main style3 secondary">
+				<div class="content container small magfont">
+					<b><font size="8em" color="white">Buy now<br><br></font>
+						<font size="5em" color="white">USD 19.5 only.  Accept PayPal.<br>Please note our online purchase is only for US, Canada, EU countries and Japan only.  Price included general post office delivery.  Delivery lead time could be around 2 ~ 4 weeks (subjects to different countries).<br><br>Thank you.<br><br></font>
+					</b>
+
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="9HEWAQVXWYL9N">
+						<table>
+							<tr><td><input type="hidden" name="on0" value="Color"><font size="5em" color="white">Color</font></td></tr><tr><td>
+							<select name="os0">
+								<option value="White">White only</option>
+								<!--<option value="Silver">Silver </option>-->
+							</select></td></tr>
+						</table>
+						<input type="image" src="https://www.paypalobjects.com/en_GB/HK/i/btn/btn_buynowCC_LG_wCUP.gif" border="0" name="submit" alt="PayPal � The safer, easier way to pay online.">
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+					</form>
+				</div>
+				<br>
+				<br>
+				<div style="height:100px"></div>
+				<a href="#QA" class="button style2 down anchored">next</a>
+			</section>
+			<div class="whiteline"></div>
+			
+			<!-- QA -->
+			<section id="QA" class="main style3 secondary">
+						<!--<hr style="width: 100%; height: 8px;"> -->
+						<div class="content container small magfont">
+						<b>Q & A<br><br></b>
+						<div class="text2left" style="line-height: 80%">
+						<font size=5em>
+						
+						Does it work for iOS and Android phones ?<br>
+						<font color="lightgrey">Yes, ThermoJack is compatible to iOS and android phones.<br><br></font>
+						Does it need a battery ?<br>
+						<font color="lightgrey">ThermoJack uses audio power from your phone and it does not need battery.  The power consumption is small that just like power taken during listening music.<br><br></font>
+						The device does not work, just shows device connected but no data, why ?<br>
+						<font color="lightgrey">ThermoJack uses audio power.  The APP will automatically set phone's volume to max (and will restore the original volume when app is quited).  But some android phones have a max volume protection.  If you find the device's green LED does not light up, please set the phone volume to max manually.  You will see the green LED lights up for every 8 seconds and device can be worked properly.<br><br></font>
+						How accurate is it?<br>
+						<font color="lightgrey">ThermoJack is very accurate.  Accuracy of temperature is +/- 1C and humidity is +/-10%.<br>Temperature range: -25C to 59C<br>Humidity range: 22% ~ 98%<br><br></font>
+						What is the use of the extension cable provided?<br>
+						<font color="lightgrey">ThermJack is very sensitive. The phone's body temperature may affect the temperature measured.  If you need a more accurate amibent measuring, extension cable is recommended so that the phone's temperature can be minimized.<br><br></font>
+						How often does it measure ? <br>
+						<font color="lightgrey">ThermoJack measures every 8 seconds.  There is green led lights up during every measurement.<br><br></font>
+					
+						</font>
+						<br>
+						<br>
+						</div>
+						</div>
+						<a href="#contact" class="button style2 down anchored">next</a>
+			</section>
+			<div class="whiteline"></div>
+			
+			
+			<!-- Contact us -->
+			<section id="contact" class="main style3 secondary">
+				<div class="content container magfont">
+					<b><font size="8em">Contact Us</font></b>
+					<hr style="width: 80%; height: 8px;">
+					<div class="box container small" style="width: 80%; height: 60%;">
+					<font size="4em">email: sales@thermojack.net<br><br></font>
+					<br>
+					<br>
+					
+					</div>
+
+				</div>
+			</section>
+			<div class="whiteline"></div>
+    
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!--
+				     Social Icons
+
+				     Use anything from here: http://fortawesome.github.io/Font-Awesome/cheatsheet/)
+				-->
+					<ul class="actions">
+
+
+						<!--<li><a href="" class="fa solo fa-twitter" target="_blank"><span>Twitter</span></a></li>-->
+						<!--<li><a href="" class="fa solo fa-facebook" target="_blank"><span>Facebook</span></a></li>-->
+						<!--<li><a href="" class="fa solo fa-google-plus" target="_blank"><span>Google+</span></a></li>-->
+						<!--<li><a href="" class="fa solo fa-dribbble" target="_blank"><span>Dribbble</span></a></li>-->
+						<!--<li><a href="" class="fa solo fa-pinterest" target="_blank"><span>Pinterest</span></a></li>-->
+						<!--<li><a href="" class="fa solo fa-instagram" target="_blank"><span>Instagram</span></a></li>-->
+						<!--<li><a href="http://youtu.be/itKxHTPGb2w" class="fa solo fa-youtube" target="_blank"><span>Youtube</span></a></li>-->
+					</ul>
+
+
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; ThermoJack - 2019</li>
+						<li>e : sales@thermojack.net</li>
+						<li>All copyrighted</li>
+						
+
+					</ul>
+
+			</footer>
+
+	</body>
+</html>
